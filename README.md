@@ -1,49 +1,50 @@
-### One-click script for acme certificate request for VPS local IPs
+### VPS本地IP的acme证书申请一键脚本
 -------------------------------------
-### One-click script
-``
+### 一键脚本
+```
 bash <(curl -Ls https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh)
 ```
-or
+或者
 ```
 bash <(wget -qO- https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh 2> /dev/null)
 ```
 ---------------------------------------
-#### Functions and features:
-1: Support pure IPV4, pure IPV6, dual-stack VPS
+#### 功能与特点：
+1：支持纯IPV4、纯IPV6、双栈VPS
 
-2：Support port 80 mode and DNS API mode, support single domain name and generic domain name.
+2：支持80端口模式与DNS API模式，支持单域名与泛域名
 
-3：Support Cloudflare/Tencent DNSPod/Aliyun hosted resolution platform DNS API applications
+3：支持Cloudflare/腾讯DNSPod/阿里Aliyun托管解析平台的DNS API申请
 
-4：Query, revoke and delete the currently applied domain name certificate. 
+4：查询、撤销并删除当前已申请的域名证书 
 
-5: manually renew domain name certificates with one click or by designation
+5：手动一键或者指定续期域名证书
 
-6：The two certificate files are stored in the root/ygkkkca file
+6：两个证书文件存放在root/ygkkkca文件中
 
-7: Has been integrated into the following proxy script (can share a certificate):
+7：已集成以下代理脚本中（可共享一个证书）：
 
-[sing-box-yg script](https://github.com/yonggekkk/sing-box-yg)
+[sing-box-yg脚本](https://github.com/yonggekkk/sing-box-yg)
 
-[x-ui-yg script](https://github.com/yonggekkk/x-ui-yg)
+[x-ui-yg脚本](https://github.com/yonggekkk/x-ui-yg)
 
-[naiveproxy-yg script](https://github.com/yonggekkk/NaiveProxy-yg)
+[naiveproxy-yg脚本](https://github.com/yonggekkk/NaiveProxy-yg)
 
-[hysteria-yg script](https://github.com/yonggekkk/Hysteria-yg) (defunct, merged into sing-box-yg script)
+[hysteria-yg脚本](https://github.com/yonggekkk/Hysteria-yg)(已停更，合并到sing-box-yg脚本)
 
-[tuic-yg script](https://github.com/yonggekkk/Tuic-yg) (defunct, merged into sing-box-yg script)
+[tuic-yg脚本](https://github.com/yonggekkk/Tuic-yg)(已停更，合并到sing-box-yg脚本)
 
-#### Note: When using port 80 mode, it will release port 80 forcibly, and it is not recommended to use it with nginx, caddy and other apps with auto-request certificates.
+#### 注意：使用80端口模式时，会强制释放80端口，且不建议与nginx、caddy类带有自动申请证书的应用同时使用
 
 ---------------------------------------------
 
-#### The preview image of the script is shown below:
+#### 脚本预览图如下：
 
-! [47d4c68b8200aff3d4c94288f9adf81](https://github.com/yonggekkk/acme-yg/assets/121604513/deb30cc7-5469-40b5-b747-0b1f481ec825)
+![47d4c68b8200aff3d4c94288f9adf81](https://github.com/yonggekkk/acme-yg/assets/121604513/deb30cc7-5469-40b5-b747-0b1f481ec825)
 
 ---------------------------------------
-#### Statement:
+#### 声明：
 
-#### This project uses base64 encryption, you can decrypt it by yourself, please don't use it if you mind, [encryption reason here](https://ygkkk.blogspot.com/2022/06/github.html)
-#### All code from Github community and ChatGPT integration; if you need open source code, please mention Issues to leave your contact email address!
+#### 该项目使用base64加密，可自行解密，介意者请勿使用，[加密原因在此](https://ygkkk.blogspot.com/2022/06/github.html)
+
+#### 所有代码来源于Github社区与ChatGPT的整合；如您需要开源代码，请提Issues留下您的联系邮箱
