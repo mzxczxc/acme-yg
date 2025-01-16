@@ -11,20 +11,14 @@ bash <(wget -qO- https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh 2> /dev/
 ---------------------------------------
 #### Functions and Features：
 1：Supports Pure IPV4, Pure IPV6, Dual Stack VPS
-
 2：Support port 80 mode and DNS API mode, support for single domain name and pan-domain name
-
 3：Support Cloudflare/Tencent DNSPod/Aliyun hosted resolution platform DNS API applications
-
 4：Query, revoke and delete the currently applied domain name certificate. 
-
 5: manually renew domain name certificates with one click or by designation
-
 6: two certificate files are stored in the root/ygkkkca file
-
 7: Has been integrated into the following proxy script (can share a certificate):
 
-[sing-box-yg脚本](https://github.com/yonggekkk/sing-box-yg)
+[sing-box-yg scripts](https://github.com/yonggekkk/sing-box-yg)
 
 [x-ui-yg脚本](https://github.com/yonggekkk/x-ui-yg)
 
@@ -32,9 +26,9 @@ bash <(wget -qO- https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh 2> /dev/
 
 [hysteria-yg脚本](https://github.com/yonggekkk/Hysteria-yg)(已停更，合并到sing-box-yg脚本)
 
-[tuic-yg脚本](https://github.com/yonggekkk/Tuic-yg)(已停更，合并到sing-box-yg脚本)
+[tuic-yg脚本](https://github.com/yonggekkk/Tuic-yg)(Discontinued, merged into sing-box-yg script)
 
-#### 注意：使用80端口模式时，会强制释放80端口，且不建议与nginx、caddy类带有自动申请证书的应用同时使用
+#### Note: The use of port 80 mode will force the release of port 80, and it is not recommended to use with nginx, caddy applications with automatic application of certificates at the same time
 
 ---------------------------------------------
 
