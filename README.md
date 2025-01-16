@@ -1,16 +1,16 @@
 ### One-click script for acme certificate request for VPS local IPs
 -------------------------------------
-### 一键脚本
+### One-Click Scripts
 ```
 bash <(curl -Ls https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh)
 ```
-或者
+or
 ```
 bash <(wget -qO- https://gitlab.com/rwkgyg/acme-script/raw/main/acme.sh 2> /dev/null)
 ```
 ---------------------------------------
-#### 功能与特点：
-1：支持纯IPV4、纯IPV6、双栈VPS
+#### Functions and Features：
+1：Supports Pure IPV4, Pure IPV6, Dual Stack VPS
 
 2：支持80端口模式与DNS API模式，支持单域名与泛域名
 
