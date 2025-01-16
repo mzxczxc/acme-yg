@@ -1,4 +1,4 @@
-### VPS本地IP的acme证书申请一键脚本
+### One-click script for acme certificate request for VPS local IPs
 -------------------------------------
 ### 一键脚本
 ```
